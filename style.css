@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: brandon-grotesque, sans-serif;
+}
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+    background-color: black;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#logo{
+    margin: 10px 20px;
+}
+#logo i{
+    display: inline;
+    position: relative;
+    text-decoration:dotted;
+    top: -3vh;
+    font-size: 25px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#logo .i1{
+    background: linear-gradient(
+        to right, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#logo .i2{
+    color: blue;
+}
+#logo .i3{
+    color: red;
+}
+#logo .i2:hover{
+    font-size: 30px;
+    padding: 15px;
+    color: blue;
+}
+#logo .i3:hover{
+    font-size: 30px;
+    padding: 15px;
+    color: red;
+}
+#logo .i1:hover{
+    font-size: 30px;
+    padding: 15px;
+    background: linear-gradient(
+        to right, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#logo img{
+    border-radius: 20px;
+    height: 65px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+#navbar ul li a{
+    border-radius: 15px;
+    font-family: brandon-grotesque, sans-serif;
+    color: white;
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+#navbar li a:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+/* main */
+.main{
+    background-image: url('images/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    overflow-y: hidden;
+}
+.main h1{
+    font-size: 88px;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.title{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.main .btn{
+    font-size: 25px;
+    margin:15px;
+    padding: 9px 25px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.main .btn:hover{
+    background-color:#f32170 ;
+    transform: scale(1.2);
+}
+
+.event{
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0;
+    margin: 0px 0 0 0px;
+    text-align: center;
+}
+.event h1{
+    color: rgb(0, 0, 255);
+    font-size: 65px;
+}
+.event p{
+    color: #E2DCC8;
+    font-size: 23px;
+    line-height: 40px;
+}
+.card{
+    margin: 0px 0;
+    padding: 20px 40px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.pro{
+    background-image: url('images/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25vh;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    left: -60px;
+}
+.card .pro img{
+    padding-bottom: 20px;
+    float: left;
+    width: 30vh;
+}
+.card .pro .desc{
+    text-align: left;
+    color: #E2DCC8;
+    position: absolute;
+    top: 10vh;
+    left: 57vh;
+    font-size: 18px;
+    line-height: 25px;
+}
+.card .pro .desc span{
+    font-size: 26px;
+}
+.card .pro .desc h5{
+    font-size: 16px;
+}
+.event, .card{
+    background-image: url('images/stars.jpg');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 8px blue;
+    background-size: 100% 100%;
+}
